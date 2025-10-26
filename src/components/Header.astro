@@ -1,0 +1,90 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16 md:h-20">
+      <div class="flex-shrink-0">
+        <a href="/" class="text-xl md:text-2xl font-bold text-primary">
+          Recruvy
+        </a>
+      </div>
+
+      <div class="hidden md:flex space-x-8">
+        <a 
+          href="/" 
+          class={`text-base font-medium transition-colors ${currentPath === '/' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          Home
+        </a>
+        <a 
+          href="/about" 
+          class={`text-base font-medium transition-colors ${currentPath === '/about' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          About
+        </a>
+        <a 
+          href="/services" 
+          class={`text-base font-medium transition-colors ${currentPath === '/services' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          Services
+        </a>
+        <a 
+          href="/contact" 
+          class={`text-base font-medium transition-colors ${currentPath === '/contact' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          Contact
+        </a>
+      </div>
+
+      <button 
+        id="mobile-menu-button" 
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col space-y-3">
+        <a 
+          href="/" 
+          class={`text-base font-medium transition-colors ${currentPath === '/' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          Home
+        </a>
+        <a 
+          href="/about" 
+          class={`text-base font-medium transition-colors ${currentPath === '/about' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          About
+        </a>
+        <a 
+          href="/services" 
+          class={`text-base font-medium transition-colors ${currentPath === '/services' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          Services
+        </a>
+        <a 
+          href="/contact" 
+          class={`text-base font-medium transition-colors ${currentPath === '/contact' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
