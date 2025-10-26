@@ -3,7 +3,7 @@
 
 > Professional company profile website for PT. Recruvy International Group, a leading talent recruitment company serving multiple industries across Indonesia.
 
-![Website Preview](./public/images/preview.png)
+![Website Preview](./public/images/desktop-mode-preview.png)
 
 ## 🌐 Live Website
 **[View Live Site →](https://recruvy-website.pages.dev)**
@@ -16,8 +16,8 @@ PT. Recruvy International Group required a modern, professional online presence 
 
 ### Project Context
 - **Client**: PT. Recruvy International Group
-- **Type**: Corporate Profile Website (Phase 1)
-- **Industry**: Talent Recruitment & HR Services
+- **Type**: Corporate Profile Website
+- **Industry**: Talent Recruitment
 - **Scope**: Static company profile with contact integration
 
 ---
@@ -116,8 +116,14 @@ This website serves as the foundation for PT. Recruvy International Group's digi
 ### Desktop View
 *Clean, professional layout optimized for desktop browsing experience*
 
+![Desktop View](./public/images/desktop-mode-preview.png)
+
 ### Mobile View
 *Fully responsive design ensuring great user experience on smartphones and tablets*
+
+<p align="center">
+  <img src="./public/images/mobile-preview.png" alt="Mobile View" width="375">
+</p>
 
 ---
 
@@ -151,10 +157,9 @@ Full-Stack Web Developer
 
 ## 📄 Project Details
 
-- **Completion Date**: October 2024
+- **Completion Date**: October 2025
 - **Project Phase**: Phase 1 (Company Profile)
 - **Project Duration**: 2 weeks
-- **Budget Category**: Small Business Website
 - **Repository**: Public (Portfolio Showcase)
 
 ---
